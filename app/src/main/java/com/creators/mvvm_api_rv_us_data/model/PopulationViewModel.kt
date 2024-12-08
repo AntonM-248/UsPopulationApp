@@ -6,19 +6,26 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.creators.mvvm_api_rv_us_data.api.CensusApi
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class PopulationViewModel constructor(
+@HiltViewModel
+class PopulationViewModel @Inject constructor(
+    private val censusApi: CensusApi
 ): ViewModel() {
+
+
     private val TAG = "ViewModel"
 
     private val _populationData = MutableLiveData<List<PopulationData>>()
     val populationData: LiveData<List<PopulationData>> get() = _populationData
 
+
     fun getPopulationData() {
         viewModelScope.launch {
             try {
-                val response = CensusApi.fetchPopulationData()
+                val response = censusApi.fetchPopulationData()
                 _populationData.postValue(response.data)
             } catch (e: Exception) {
                 Log.d(TAG, "Exception: ${e.toString()}")
