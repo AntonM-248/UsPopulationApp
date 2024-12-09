@@ -15,12 +15,11 @@ class PopulationViewModel @Inject constructor(
     private val censusApi: CensusApi
 ): ViewModel() {
 
-
     private val TAG = "ViewModel"
 
     private val _populationData = MutableLiveData<List<PopulationData>>()
-    val populationData: LiveData<List<PopulationData>> get() = _populationData
 
+    val populationData: LiveData<List<PopulationData>> get() = _populationData
 
     fun getPopulationData() {
         viewModelScope.launch {

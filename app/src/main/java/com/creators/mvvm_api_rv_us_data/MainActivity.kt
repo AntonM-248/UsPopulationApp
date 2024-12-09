@@ -18,7 +18,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     val TAG = "Main Activity"
 
-    val viewModel: PopulationViewModel by viewModels()
+    private val viewModel: PopulationViewModel by viewModels()
 
     lateinit var binding: ActivityMainBinding
 
