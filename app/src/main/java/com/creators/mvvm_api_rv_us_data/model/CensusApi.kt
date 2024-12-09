@@ -1,6 +1,5 @@
-package com.creators.mvvm_api_rv_us_data.api
+package com.creators.mvvm_api_rv_us_data.model
 
-import com.creators.mvvm_api_rv_us_data.model.PopulationResponse
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

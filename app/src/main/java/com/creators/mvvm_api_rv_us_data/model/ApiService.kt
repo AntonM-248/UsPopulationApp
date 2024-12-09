@@ -1,6 +1,5 @@
-package com.creators.mvvm_api_rv_us_data.api
+package com.creators.mvvm_api_rv_us_data.model
 
-import com.creators.mvvm_api_rv_us_data.model.PopulationResponse
 import retrofit2.http.GET
 
 interface ApiService {

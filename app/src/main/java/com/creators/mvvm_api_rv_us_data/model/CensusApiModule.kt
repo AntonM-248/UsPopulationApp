@@ -1,4 +1,4 @@
-package com.creators.mvvm_api_rv_us_data.api
+package com.creators.mvvm_api_rv_us_data.model
 
 import dagger.Module
 import dagger.Provides
