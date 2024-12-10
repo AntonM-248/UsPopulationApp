@@ -1,4 +1,4 @@
-package com.creators.mvvm_api_rv_us_data.ui
+package com.creators.mvvm_api_rv_us_data.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.creators.mvvm_api_rv_us_data.R
-import com.creators.mvvm_api_rv_us_data.model.PopulationData
+import com.creators.mvvm_api_rv_us_data.data.model.PopulationData
 
 class PopulationAdapter (private var data: List<PopulationData>) :
         RecyclerView.Adapter<PopulationAdapter.PopulationViewHolder>() {

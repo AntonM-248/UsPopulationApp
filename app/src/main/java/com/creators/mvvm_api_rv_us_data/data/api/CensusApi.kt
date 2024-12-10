@@ -1,10 +1,10 @@
-package com.creators.mvvm_api_rv_us_data.model
+package com.creators.mvvm_api_rv_us_data.data.api
 
+import com.creators.mvvm_api_rv_us_data.data.model.PopulationResponse
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-
 
 
 class CensusApi {
@@ -25,7 +25,6 @@ class CensusApi {
             .create(ApiService::class.java)
     }
 
-    // Fetch Population Data
     suspend fun fetchPopulationData(): PopulationResponse {
         return apiService.getPopulationData()
     }

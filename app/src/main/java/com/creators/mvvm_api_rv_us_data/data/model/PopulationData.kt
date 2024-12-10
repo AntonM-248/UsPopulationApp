@@ -1,4 +1,4 @@
-package com.creators.mvvm_api_rv_us_data.model
+package com.creators.mvvm_api_rv_us_data.data.model
 
 data class PopulationData (
     val Nation: String,

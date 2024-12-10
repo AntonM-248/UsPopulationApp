@@ -1,4 +1,4 @@
-package com.creators.mvvm_api_rv_us_data
+package com.creators.mvvm_api_rv_us_data.ui.activity
 
 import android.os.Bundle
 import android.util.Log
@@ -9,9 +9,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.creators.mvvm_api_rv_us_data.R
 import com.creators.mvvm_api_rv_us_data.databinding.ActivityMainBinding
-import com.creators.mvvm_api_rv_us_data.ui.PopulationAdapter
-import com.creators.mvvm_api_rv_us_data.ui.PopulationViewModel
+import com.creators.mvvm_api_rv_us_data.ui.adapter.PopulationAdapter
+import com.creators.mvvm_api_rv_us_data.ui.view_model.PopulationViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
